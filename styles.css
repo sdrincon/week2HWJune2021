@@ -1,0 +1,140 @@
+body {
+  font-family:Verdana, Tahoma, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  color:black; font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  
+}
+
+.nav {
+  display: flex;
+  justify-content:center;
+  width: 800px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content:center;
+  width: 800px;
+  margin: auto;
+  font-weight: bold;
+  font-size: small;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:center;
+  width: 800px;
+  margin: auto;
+  padding: 10px 10px 20px 10px;
+}
+
+.window {
+  display: flex;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;   
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%);
+  }
+}
+
+#slide {
+  width: 500px;
+  height: 500px;
+}
+
+#slideShow {
+  display: flex;
+  transform: translateX(000px);
+}
+
+
+/* links */
+
+a:link { /* unvisited link */
+  color:firebrick;
+  text-decoration: none;
+}
+
+a:visited { /* visited link */
+  color:darkred;
+  text-decoration: none;
+}
+
+a:hover { /* mouse-over link */
+  color: hotpink;
+  text-decoration: underline;
+}
+
+/* buttons */
+
+.button {
+  display: flex;
+  width: 200px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  vertical-align:middle;
+}
+
+#prevButton {
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px 5px 5px;
+  font-size: x-large;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+}
+  
+#nextButton {
+  color: black;
+  border: 1px solid black;
+  padding: 5px 5px 5px 10px;
+  font-size: x-large;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+}
+
+/* header animation */
+
+.fadein { position:relative; height:150px; width:800px; }
+
+.fadein img { 
+  position:absolute;
+  left:0;
+  right:0;
+  opacity:0;
+  animation-name: fade;
+  animation-duration: 9s;
+  animation-iteration-count: infinite; }
+
+.fadein img:nth-child(1) { animation-delay: 0s;  }
+
+.fadein img:nth-child(2) { animation-delay: 3s;  }
+
+.fadein img:nth-child(3) { animation-delay: 6s;  }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  11.11% { opacity: 1; }
+  33.33% { opacity: 1; }
+  44.44% { opacity: 0; }
+  100% { opacity: 0; }
+}

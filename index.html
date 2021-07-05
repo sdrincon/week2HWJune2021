@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS style sheet tag-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--unoriginal tab title-->
+    <title>Week 2 Homework</title>
+
+    <!--meta tags-->
+    <meta name="keywords" content= "HTML, CSS, VetsinTech, Art, Desiree, Rincon, Portfolio">
+
+</head>
+
+<body>
+
+    <!--ANIMATED HEADER -->
+    <div class="flexbox">
+        <div class="fadein">
+            <img src="./header/1.jpg" width="800" height="150" alt="header1">
+            <img src="./header/2.jpg" width="800" height="150" alt="header2">
+            <img src="./header/3.jpg" width="800" height="150" alt="header3">
+        </div>
+    </div>
+
+    <!--simple links bar-->
+    <div class="flexbox">
+        <div class="nav">
+            <a href="https://www.linkedin.com/in/sdrincon">LinkedIn</a>&nbsp;|&nbsp;
+            <a href="mailto:s.d.rincon@gmail.com">Contact</a>&nbsp;|&nbsp;
+            <a href="portfolio.pdf">Download Portfolio</a>
+        </div>
+    </div>
+
+    <h1><img src="./header/myportfolio.png" alt="My Portfolio"></h1>
+
+    <div class="flex-container">
+        <!--previous button-->
+        <div class="button" style="width:150px; margin:0 auto;">
+            <button id="prevButton" onclick="prevSlide()"> ◄ </button>
+        </div>
+
+        <!--slideshow window-->
+        <div class="window">
+            <div class="slideShow" id="slideShow">
+                <img id="slide" src="./portfolio/1.jpg" width="500" height="500" alt="pic1">
+                <img id="slide" src="./portfolio/2.jpg" width="500" height="500" alt="pic2">
+                <img id="slide" src="./portfolio/3.jpg" width="500" height="500" alt="pic3">
+                <img id="slide" src="./portfolio/4.jpg" width="500" height="500" alt="pic4">
+                <img id="slide" src="./portfolio/5.jpg" width="500" height="500" alt="pic5">
+                <img id="slide" src="./portfolio/6.jpg" width="500" height="500" alt="pic6">
+                <img id="slide" src="./portfolio/7.jpg" width="500" height="500" alt="pic7">
+                <img id="slide" src="./portfolio/8.jpg" width="500" height="500" alt="pic8">
+                <img id="slide" src="./portfolio/9.jpg" width="500" height="500" alt="pic9">
+                <img id="slide" src="./portfolio/10.jpg" width="500" height="500" alt="pic10">
+                <img id="slide" src="./portfolio/11.jpg" width="500" height="500" alt="pic11">
+                <img id="slide" src="./portfolio/12.jpg" width="500" height="500" alt="pic12">
+                <img id="slide" src="./portfolio/13.jpg" width="500" height="500" alt="pic13">
+                <img id="slide" src="./portfolio/14.jpg" width="500" height="500" alt="pic14">
+                <img id="slide" src="./portfolio/15.jpg" width="500" height="500" alt="pic15">
+                <img id="slide" src="./portfolio/16.jpg" width="500" height="500" alt="pic16">
+                <img id="slide" src="./portfolio/17.jpg" width="500" height="500" alt="pic17">
+                <img id="slide" src="./portfolio/18.jpg" width="500" height="500" alt="pic18">
+                <img id="slide" src="./portfolio/19.jpg" width="500" height="500" alt="pic19">
+                <img id="slide" src="./portfolio/20.jpg" width="500" height="500" alt="pic20">
+            </div>
+        </div>
+
+        <!--next button-->
+        <div class="button" style="width:150px; margin:0 auto;">
+            <button id="nextButton" onclick="nextSlide()"> ► </button>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="flexbox">
+        <div class="footer">
+            <p>&copy; 2021 Desiree Rincon. All rights reserved. </p>
+        </div>
+    </div>
+
+    <!--javascript external source-->
+    <script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>
